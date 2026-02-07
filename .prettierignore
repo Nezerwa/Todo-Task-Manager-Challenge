@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Build outputs
+dist
+dist-ssr
+build
+.rolldown
+
+# Cache
+.vite
+.cache
+*.tsbuildinfo
+
+# Coverage
+coverage
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+
+# Git
+.git
+
+# Test artifacts
+__snapshots__
