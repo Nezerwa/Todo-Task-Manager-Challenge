@@ -44,7 +44,7 @@ jobs:
         continue-on-error: true # Continue even if tests fail (for now)
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: success()
         with:
           name: build-${{ github.sha }}
