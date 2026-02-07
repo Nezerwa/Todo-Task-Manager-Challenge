@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { AppSidebar } from "@/components/AppSidebar";
+import { PageHeader } from "@/components/PageHeader";
 import { SidebarProvider, SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 
 function RootLayoutContent() {
@@ -8,13 +9,16 @@ function RootLayoutContent() {
   return (
     <>
       <AppSidebar />
-      <main className="flex-1 w-full">
+      <main className="flex-1 w-full flex flex-col">
         {!open && (
           <div className="border-b p-2">
             <SidebarTrigger />
           </div>
         )}
-        <Outlet />
+        <PageHeader />
+        <div className="flex-1 overflow-auto">
+          <Outlet />
+        </div>
       </main>
     </>
   );
