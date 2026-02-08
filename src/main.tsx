@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { queryClient } from "@/lib/config/queryClient";
+import "./lib/i18n/config";
 import "./index.css";
 import App from "./App.tsx";
 

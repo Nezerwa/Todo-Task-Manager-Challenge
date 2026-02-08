@@ -4,14 +4,14 @@ import { PageHeader } from "@/components/PageHeader";
 import { SidebarProvider, SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 
 function RootLayoutContent() {
-  const { open } = useSidebar();
+  const { open, isMobile } = useSidebar();
 
   return (
     <>
       <AppSidebar />
       <main className="flex-1 w-full flex flex-col">
-        {!open && (
-          <div className="border-b p-2">
+        {(isMobile || !open) && (
+          <div className="border-b p-2 z-10 bg-white dark:bg-gray-950">
             <SidebarTrigger />
           </div>
         )}

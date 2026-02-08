@@ -1,0 +1,128 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "duplicate": "Dupliquer",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "actions": "Actions",
+    "noData": "Aucune donnée disponible",
+    "confirm": "Confirmer",
+    "close": "Fermer"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "tasks": "Tâches",
+    "calendar": "Calendrier",
+    "settings": "Paramètres",
+    "hrTasks": "Tâches RH"
+  },
+  "hrTasks": {
+    "title": "Centre des Tâches RH 🗿",
+    "subtitle": "Bienvenue dans le centre des Ressources Humaines",
+    "calendarComingSoon": "Vue calendrier bientôt disponible..."
+  },
+  "viewToolbar": {
+    "kanban": "Kanban",
+    "list": "Liste",
+    "calendar": "Chronologie",
+    "searchPlaceholder": "Rechercher des tâches...",
+    "filterByStatus": "Filtrer par statut",
+    "sortBy": "Trier par",
+    "addTask": "Ajouter une Tâche"
+  },
+  "status": {
+    "todo": "À Faire",
+    "in_progress": "En Cours",
+    "in_review": "En Révision",
+    "completed": "Terminé"
+  },
+  "priority": {
+    "low": "Faible",
+    "medium": "Moyenne",
+    "high": "Élevée",
+    "urgent": "Urgente"
+  },
+  "listView": {
+    "groupByStatus": "Grouper par statut",
+    "noTasks": "Aucune tâche trouvée",
+    "task": "Tâche",
+    "priority": "Priorité",
+    "status": "Statut",
+    "dueDate": "Date d'échéance",
+    "assignedTo": "Assigné à",
+    "actions": "Actions",
+    "noDate": "Aucune date",
+    "noPriority": "Aucune priorité",
+    "notAssigned": "Non assigné"
+  },
+  "kanbanBoard": {
+    "loadingTasks": "Chargement des tâches...",
+    "errorLoadingTasks": "Erreur lors du chargement des tâches",
+    "dragToReorder": "Glissez les cartes pour réorganiser",
+    "checklist": "Liste de contrôle"
+  },
+  "taskCard": {
+    "comments": "Commentaires",
+    "attachments": "Pièces jointes",
+    "checklist": "Liste de contrôle"
+  },
+  "taskDialog": {
+    "createTask": "Créer une Tâche",
+    "editTask": "Modifier la Tâche",
+    "taskTitle": "Titre de la Tâche",
+    "description": "Description",
+    "status": "Statut",
+    "priority": "Priorité",
+    "dueDate": "Date d'échéance",
+    "assignTo": "Assigner à",
+    "selectStatus": "Sélectionner le statut",
+    "selectPriority": "Sélectionner la priorité",
+    "selectDate": "Sélectionner la date",
+    "selectUser": "Sélectionner un utilisateur"
+  },
+  "deleteDialog": {
+    "title": "Supprimer la Tâche",
+    "message": "Êtes-vous sûr de vouloir supprimer cette tâche ? Cette action est irréversible.",
+    "confirm": "Supprimer",
+    "cancel": "Annuler"
+  },
+  "theme": {
+    "light": "Mode Clair",
+    "dark": "Mode Sombre",
+    "toggleTheme": "Changer de Thème"
+  },
+  "language": {
+    "english": "Anglais",
+    "french": "Français",
+    "switchLanguage": "Changer de Langue"
+  },
+  "sidebar": {
+    "collapse": "Réduire la Barre Latérale",
+    "expand": "Étendre la Barre Latérale",
+    "pages": "Pages",
+    "account": "Compte",
+    "upgrade": "Mettre à Niveau",
+    "upgradeToPro": "Passer à la Version Pro",
+    "unlockFeatures": "Débloquer les fonctionnalités avancées",
+    "settingsPreferences": "Paramètres et Préférences",
+    "accounts": "Comptes"
+  },
+  "upgradeCard": {
+    "title": "Maximisez votre productivité",
+    "description": "Améliorez votre gestion des tâches avec des outils et fonctionnalités avancés.",
+    "button": "Mettre à Niveau"
+  },
+  "calendarView": {
+    "week": "Semaine",
+    "month": "Mois",
+    "newTask": "Nouvelle Tâche",
+    "noDescription": "Développer et lancer un nouveau programme de reconnaissance..."
+  }
+}
