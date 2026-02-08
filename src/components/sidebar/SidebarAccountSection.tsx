@@ -1,4 +1,5 @@
 import { Plus, MoreHorizontal } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import {
   SidebarGroup,
   SidebarGroupContent,
@@ -12,10 +13,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import profileImage from "@/assets/profile.jpg";
 
 export function SidebarAccountSection() {
+  const { t } = useTranslation();
+
   return (
     <SidebarGroup>
       <div className="flex items-center justify-between px-3 py-2">
-        <SidebarGroupLabel>Accounts</SidebarGroupLabel>
+        <SidebarGroupLabel>{t("sidebar.accounts")}</SidebarGroupLabel>
         <Button variant="ghost" size="icon" className="h-6 w-6">
           <Plus className="h-4 w-4" />
         </Button>

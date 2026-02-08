@@ -1,8 +1,10 @@
 import purpleGradient from "@/assets/purple gradient.jpg";
 import { Button } from "@/components/ui/button";
 import { LoomIcon } from "@/components/icons/LoomIcon";
+import { useTranslation } from "react-i18next";
 
 export function SidebarUpgradeCard() {
+  const { t } = useTranslation();
   return (
     <div className="overflow-hidden rounded-lg bg-white">
       <div className="relative h-20">
@@ -19,13 +21,11 @@ export function SidebarUpgradeCard() {
       </div>
       <div className="px-4 pt-8 pb-4">
         <h3 className="mb-1 text-center text-sm font-semibold text-gray-900">
-          Maximize your productivity
+          {t("upgradeCard.title")}
         </h3>
-        <p className="mb-3 text-center text-xs text-gray-600">
-          Boost your task management with advanced tools & features.
-        </p>
+        <p className="mb-3 text-center text-xs text-gray-600">{t("upgradeCard.description")}</p>
         <Button className="w-full bg-slate-800 text-white hover:bg-slate-700" size="sm">
-          Upgrade
+          {t("upgradeCard.button")}
         </Button>
       </div>
     </div>

@@ -5,6 +5,7 @@ import {
   SidebarMenuItem,
   SidebarMenuButton,
 } from "@/components/ui/sidebar";
+import { useTranslation } from "react-i18next";
 import { Badge } from "@/components/ui/badge";
 import type { NavItem } from "@/lib/constants/navigation";
 
@@ -13,6 +14,14 @@ interface SidebarNavSectionProps {
 }
 
 export function SidebarNavSection({ items }: SidebarNavSectionProps) {
+  const { t } = useTranslation();
+
+  const getLabel = (label: string) => {
+    if (label === "Settings & Preferences") return t("sidebar.settingsPreferences");
+    if (label === "Calendar") return t("navigation.calendar");
+    return label;
+  };
+
   return (
     <SidebarGroup>
       <SidebarGroupContent>
@@ -22,7 +31,7 @@ export function SidebarNavSection({ items }: SidebarNavSectionProps) {
               <SidebarMenuButton asChild>
                 <a href={item.href}>
                   <item.icon className="h-4 w-4" />
-                  <span>{item.label}</span>
+                  <span>{getLabel(item.label)}</span>
                   {item.badge && (
                     <Badge variant="secondary" className="ml-auto bg-purple-100 text-purple-700">
                       {item.badge}

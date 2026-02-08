@@ -37,7 +37,7 @@ export function SidebarPagesSection({
                 <SidebarMenuItem key={page.label}>
                   <SidebarMenuButton
                     asChild
-                    className="group/item hover:bg-white hover:px-3 hover:py-2"
+                    className="group/item hover:bg-white dark:hover:bg-gray-800 hover:px-3 hover:py-2"
                   >
                     <a href={page.href} className="flex items-center gap-2">
                       <GripVertical className="h-4 w-4 text-muted-foreground/40 group-hover/item:text-muted-foreground" />

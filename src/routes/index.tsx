@@ -2,6 +2,10 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import { RootLayout } from "@/layouts/RootLayout";
 import { HomePage } from "@/pages/HomePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
+import { HRTasksPage } from "@/pages/HRTasksPage";
+import { WindahCompPage } from "@/pages/WindahCompPage";
+import { NoSpaceDevPage } from "@/pages/NoSpaceDevPage";
+import { DribblePortfolioPage } from "@/pages/DribblePortfolioPage";
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +15,22 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: "hr-tasks",
+        element: <HRTasksPage />,
+      },
+      {
+        path: "windah",
+        element: <WindahCompPage />,
+      },
+      {
+        path: "nospace",
+        element: <NoSpaceDevPage />,
+      },
+      {
+        path: "dribble",
+        element: <DribblePortfolioPage />,
       },
       {
         path: "404",
